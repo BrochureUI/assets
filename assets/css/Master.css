@@ -1,0 +1,16 @@
+html,
+body {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
