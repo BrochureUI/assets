@@ -20,11 +20,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
           folder: dist
-
-      - name: Configure Git
-        run: |
-          git config --global user.name "Rhman Ibrahim"
-          git config --global user.email "rhmanibrahimmuhammad@gmail.com"
