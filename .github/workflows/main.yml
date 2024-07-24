@@ -19,8 +19,3 @@ jobs:
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          flatten: true
-          single-spa: true
-          folder: build
-          branch: gh-pages
