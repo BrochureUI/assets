@@ -1,0 +1,112 @@
+:root {
+    
+    /*
+        Base Colors
+    */
+
+    --black: #000000;
+    --white: #fafafa;
+
+    /*
+        Google Material Color UI
+        1. https://mui.com/material-ui/customization/color/
+        2. https://m2.material.io/inline-tools/color/
+    */
+
+    /*
+        Black
+    */
+
+    --black-900: var(--black);
+    --black-850: #131313;
+    --black-800: #262626;
+    --black-700: #434343;
+    --black-600: #555555;
+
+    /*
+        White
+    */
+    --white-400: #dedede;
+    --white-300: #f0f0f0;
+    --white-250: #ececec;
+    --white-200: #f5f5f5;
+    --white-100: var(--white);
+    
+    /*
+        Purple
+    */
+
+    --purple-900: #4a148c;
+    --purple-800: #6a1b9a;
+    --purple-700: #7b1fa2;
+    --purple-600: #8e24aa;
+
+    /*
+        Alerts:
+        d: Danger.
+        w: Warning.
+        i: Info.
+        s: Success.
+    */
+
+    --d1:#d32f2f;
+    --d2: #e57373;
+    
+    --w1:#f57c00;
+    --w2: #ffb74d;
+    
+    --i1:#0288d1;
+    --i2: #4fc3f7;
+    
+    --s1:#388e3c;
+    --s2: #81c784;
+
+    /*
+        CSS Scan
+        https://getcssscan.com/css-box-shadow-examples
+    */
+
+    /*
+        Shadow
+    */
+    
+    --shadow-4: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --shadow-5: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*
+    -m*: for main color.
+    -a*: for accent color.
+*/
+
+body,
+.dark {
+    --m0: var(--white-100);
+    --m1: var(--black-900);
+    --md: var(--black-850);
+    --m2: var(--black-800);
+    --m3: var(--black-700);
+    --m4: var(--black-600);
+}
+
+.light {
+    --m0: var(--black-900);
+    --m1: var(--white-100);
+    --m2: var(--white-400);
+    --m3: var(--white-300);
+    --md: var(--white-250);
+    --m4: var(--white-200);
+}
+
+body {
+    --a1: var(--purple-900);
+    --a2: var(--purple-800);
+    --a3: var(--purple-700);
+    --a4: var(--purple-600);
+    background: var(--m1);
+    color: var(--m0);
+}
+
+button, a {
+    color: var(--m0);
+}
