@@ -1,25 +1,22 @@
-name: Deploy to GitHub Pages
-
-on:
+name: Build and Deploy to GH Pages
+on: 
   push:
-    branches: [main]
-
+  workflow_dispatch:
+permissions: 
+  contents: write
 jobs:
   build-and-deploy:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install and Build
+        run: |
+          yarn
+          yarn build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          branch: gh-pages
           folder: dist
