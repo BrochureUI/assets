@@ -23,3 +23,8 @@ jobs:
           token: ${{ secrets.TOKEN }}
           branch: main
           folder: dist
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "Rhman Ibrahim"
+          git config --global user.email "rhmanibrahimmuhammad@gmail.com"
