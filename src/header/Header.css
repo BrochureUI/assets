@@ -1,0 +1,92 @@
+#scheme-header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0px 0px 64px 64px;
+    background: var(--ubuntu-orange);
+    color: var(--ubuntu-white);
+    margin-bottom: 16px;
+    --rotation-x: 64px;
+    overflow: hidden;
+    font-size: 24px;
+    width: 100%;
+    gap: 16px;
+}
+
+#scheme-header h1 {
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 64px;
+}
+
+#scheme-header h2 {
+    position: sticky;
+    color: var(--ubuntu-dark);
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4;
+    max-width: 320px;
+    font-size: 32px;
+}
+
+#scheme-header nav {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 0px 32px;
+    bottom: 16px;
+    width: 100%;
+}
+
+#scheme-header nav i,
+#scheme-header nav a {
+    color: var(--ubuntu-white);
+    margin: 0px 8px;
+}
+
+#scheme-header {
+    animation-fill-mode: forwards;
+    -webkit-animation-name: heightFrame;
+    -moz-animation-name: heightFrame;    
+    animation-name: heightFrame;
+    animation-duration: 1s;
+}
+
+#scheme-header h1,
+#scheme-languages,
+#scheme-contact {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: opacityFrame;
+    -moz-animation-name: opacityFrame;
+    animation-name: opacityFrame;
+    animation-duration: 1s;
+}
+
+#scheme-languages {
+    animation-delay: 2s;
+}
+
+#scheme-contact {
+    animation-delay: 2.5s;
+}
+
+@keyframes opacityFrame {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes heightFrame {
+    from {
+        height: 0vh;
+    }
+    to {
+        height: 75dvh;
+    }
+}
