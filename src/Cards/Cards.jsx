@@ -8,7 +8,7 @@ const Cards = () => {
             {
                 repositories.map(
                     (repository, index) => (
-                        <section key={ index }>
+                        <section key={ index } style={{ animationDelay:`${(index / 2) + 1}s`}}>
                             <i className={ repository.icon.class }>{ repository.icon.name }</i>
                             <h2>{ repository.title }</h2>
                             <p>{ repository.description }</p>

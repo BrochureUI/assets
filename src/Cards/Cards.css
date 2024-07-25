@@ -8,8 +8,14 @@
 #scheme-cards section {
     position: relative;
     background: var(--ubuntu-white);
+    animation-fill-mode: forwards;
+    -webkit-animation-name: opacityFrame;
+    -moz-animation-name: opacityFrame;    
+    animation-name: opacityFrame;
+    animation-duration: 1s;
     border-radius: 8px;
     padding: 32px 16px;
+    opacity: 0;
 }
 
 #scheme-cards section > i {
@@ -32,4 +38,16 @@
 #scheme-cards section ul {
     display: flex;
     gap: 8px;
+}
+
+@keyframes opacityFrame {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
 }
