@@ -13,7 +13,7 @@ const Cards = () => {
                         <i className="fa-brands fa-python"></i>
                     </li>
                     <li>
-                        <a className="fa-brands fa-github"></a>
+                        <a href="https://github.com/rhman-ibrahim/api.authen" className="fa-brands fa-github" target="_blank"></a>
                     </li>
                 </ul>
             </section>
@@ -26,7 +26,7 @@ const Cards = () => {
                         <i className="fa-brands fa-python"></i>
                     </li>
                     <li>
-                        <a className="fa-brands fa-github"></a>
+                        <a href="https://github.com/rhman-ibrahim/api.authorization" className="fa-brands fa-github" target="_blank"></a>
                     </li>
                 </ul>
             </section>
@@ -39,7 +39,7 @@ const Cards = () => {
                         <i className="fa-brands fa-python"></i>
                     </li>
                     <li>
-                        <a className="fa-brands fa-github"></a>
+                        <a href="https://github.com/rhman-ibrahim/api.chat" className="fa-brands fa-github" target="_blank"></a>
                     </li>
                 </ul>
             </section>
@@ -52,7 +52,7 @@ const Cards = () => {
                         <i className="fa-brands fa-js"></i>
                     </li>
                     <li>
-                        <a className="fa-brands fa-github"></a>
+                        <a href="https://github.com/rhman-ibrahim/blocks" className="fa-brands fa-github" target="_blank"></a>
                     </li>
                 </ul>
             </section>
@@ -65,7 +65,7 @@ const Cards = () => {
                         <i className="fa-brands fa-js"></i>
                     </li>
                     <li>
-                        <a className="fa-brands fa-github"></a>
+                        <a href="https://github.com/rhman-ibrahim/fields" className="fa-brands fa-github" target="_blank"></a>
                     </li>
                 </ul>
             </section>
@@ -78,7 +78,7 @@ const Cards = () => {
                         <i className="fa-brands fa-js"></i>
                     </li>
                     <li>
-                        <a className="fa-brands fa-github"></a>
+                        <a href="https://github.com/rhman-ibrahim/notify" className="fa-brands fa-github" target="_blank"></a>
                     </li>
                 </ul>
             </section>
@@ -91,7 +91,7 @@ const Cards = () => {
                         <i className="fa-brands fa-js"></i>
                     </li>
                     <li>
-                        <a className="fa-brands fa-github"></a>
+                        <a href="https://github.com/rhman-ibrahim/ui.authen" className="fa-brands fa-github" target="_blank"></a>
                     </li>
                 </ul>
             </section>
@@ -104,7 +104,7 @@ const Cards = () => {
                         <i className="fa-brands fa-js"></i>
                     </li>
                     <li>
-                        <a className="fa-brands fa-github"></a>
+                        <a href="https://github.com/rhman-ibrahim/api.authorization" className="fa-brands fa-github" target="_blank"></a>
                     </li>
                 </ul>
             </section>
@@ -117,7 +117,7 @@ const Cards = () => {
                         <i className="fa-brands fa-js"></i>
                     </li>
                     <li>
-                        <a className="fa-brands fa-github"></a>
+                        <a href="https://github.com/rhman-ibrahim/ui.chat" className="fa-brands fa-github" target="_blank"></a>
                     </li>
                 </ul>
             </section>
