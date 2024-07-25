@@ -38,7 +38,7 @@ const Header = () => {
                             setStart(true);
                             resolve();
                         },
-                        3_000
+                        1_000
                     )
                 );
             }
@@ -64,20 +64,14 @@ const Header = () => {
                 startCycling &&
                 <motion.h2 variants={ h2Variants } initial="hidden" animate={ controls }>{ MESSAGES[index] }</motion.h2>
             }
-            <nav>
-                <div id="scheme-languages">
-                    <i className="fa-brands fa-python"></i>
-                    <i className="fa-brands fa-js"></i>
-                </div>
-                <div id="scheme-contact">
-                    <a href="https://github.com/rhman-ibrahim" target="_blank">
-                        <i className="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://x.com/Rhman_Al_Warraq" target="_blank">
-                        <i className="fa-brands fa-x-twitter"></i>
-                    </a>
-                </div>
-            </nav>
+            <ul id="scheme-icons">
+                <li className="material-symbols-outlined" title='Blocks'>responsive_layout</li>
+                <li className="material-symbols-outlined" title='Fields'>input</li>
+                <li className="material-symbols-outlined" title='Notifications'>notifications</li>
+                <li className="material-icons" title='Authenticate'>account_circle</li>
+                <li className="material-icons" title='Authorize'>admin_panel_settings</li>
+                <li className="material-icons" title='Chat'>forum</li>
+            </ul>
         </header>
     )
 }
